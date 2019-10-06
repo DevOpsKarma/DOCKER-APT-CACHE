@@ -66,3 +66,11 @@ Finally, clean up after your test by stopping and removing the container, and th
 ### $ docker container stop test_apt_cacher_ng
 ### $ docker container rm test_apt_cacher_ng
 ### $ docker image rm eg_apt_cacher_ng
+
+
+## If you need to configure any other container to use the APT cache you need to run the following command con the container:
+
+### echo 'Acquire::http { Proxy "http://dockerhost:3142"; };' >> /etc/apt/apt.conf.d/01proxy
+
+## Also you can add any other computer con your local network to use this cache/proxy using the command but you will need to enable the 
+## cache port(3142) on your Firewall
