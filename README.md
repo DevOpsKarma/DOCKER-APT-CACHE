@@ -68,7 +68,7 @@ Finally, clean up after your test by stopping and removing the container, and th
 ### $ docker image rm eg_apt_cacher_ng
 
 
-If you need to configure any other container to use the APT cache you need to run the following command con the container:
+If you need to configure any other container to use the APT cache you need to run the following command on the container:
 
 ### echo 'Acquire::http { Proxy "http://dockerhost:3142"; };' >> /etc/apt/apt.conf.d/01proxy
 
