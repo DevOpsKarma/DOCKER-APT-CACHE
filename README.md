@@ -2,10 +2,10 @@
 # autor : docs.docker.com
 
 To build the image using:
-$ docker build -t eg_apt_cacher_ng .
+# $ docker build -t eg_apt_cacher_ng .
 
 Then run it, mapping the exposed port to one on the host
-$ docker run -d -p 3142:3142 --name test_apt_cacher_ng eg_apt_cacher_ng
+# $ docker run -d -p 3142:3142 --name test_apt_cacher_ng eg_apt_cacher_ng
 
 To see the logfiles that are tailed in the default command, you can use:
 $ docker logs -f test_apt_cacher_ng
@@ -27,6 +27,7 @@ RUN apt-get update && apt-get install -y vim git
 
 
 # docker build -t my_ubuntu .
+
 Option 2 is good for testing, but breaks other HTTP clients which obey http_proxy, such as curl, wget and others:
 
 $ docker run --rm -t -i -e http_proxy=http://dockerhost:3142/ debian bash
