@@ -72,5 +72,5 @@ If you need to configure any other container to use the APT cache you need to ru
 
 ### echo 'Acquire::http { Proxy "http://dockerhost:3142"; };' >> /etc/apt/apt.conf.d/01proxy
 
-Also you can add any other computer con your local network to use this cache/proxy using the command but you will need to enable the 
-cache port(3142) on your Firewall
+Also you can add any other computer on your local network to use this cache/proxy using the command but you will need to enable the 
+cache port(3142) on your Firewall.
