@@ -1,5 +1,5 @@
-#DOCKER-APT-CACHE 
-#autor : docs.docker.com
+# DOCKER-APT-CACHE 
+# autor : docs.docker.com
 
 To build the image using:
 $ docker build -t eg_apt_cacher_ng .
