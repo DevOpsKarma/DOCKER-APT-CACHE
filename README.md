@@ -43,7 +43,7 @@ Apt-cacher-ng has some tools that allow you to manage the repository, and they c
 
 ### $ docker run --rm -t -i --volumes-from test_apt_cacher_ng eg_apt_cacher_ng bash
 
-root@f38c87f2a42d:/# /usr/lib/apt-cacher-ng/distkill.pl
+root@xxxxxx:/# /usr/lib/apt-cacher-ng/distkill.pl
 Scanning /var/cache/apt-cacher-ng, please wait...
 Found distributions:
 bla, taggedcount: 0
