@@ -1,11 +1,11 @@
 # DOCKER-APT-CACHE
-# autor : docs.docker.com
+## autor : docs.docker.com
 
 To build the image using:
-# $ docker build -t eg_apt_cacher_ng .
+### $ docker build -t eg_apt_cacher_ng .
 
 Then run it, mapping the exposed port to one on the host
-# $ docker run -d -p 3142:3142 --name test_apt_cacher_ng eg_apt_cacher_ng
+### $ docker run -d -p 3142:3142 --name test_apt_cacher_ng eg_apt_cacher_ng
 
 To see the logfiles that are tailed in the default command, you can use:
 $ docker logs -f test_apt_cacher_ng
