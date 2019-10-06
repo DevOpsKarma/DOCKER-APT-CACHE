@@ -19,7 +19,6 @@ Link Debian-based containers to the APT proxy container using --link
 Create a custom network of an APT proxy container with Debian-based containers.
 Option 1 injects the settings safely into your apt configuration in a local version of a common base:
 
-
 FROM ubuntu
 
 RUN  echo 'Acquire::http { Proxy "http://dockerhost:3142"; };' >> /etc/apt/apt.conf.d/01proxy
