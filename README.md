@@ -74,3 +74,5 @@ If you need to configure any other container to use the APT cache you need to ru
 
 Also you can add any other computer on your local network to use this cache/proxy using the command but you will need to enable the 
 cache port(3142) on your Firewall.
+
+### Content from: DevOpsKarma.com
